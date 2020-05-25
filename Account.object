@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>ACA_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <label>ACA Indicator</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ASO_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <label>ASO Indicator</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>COBRA__c</fullName>
+        <externalId>false</externalId>
+        <label>COBRA</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Y</fullName>
+                    <default>false</default>
+                    <label>Y</label>
+                </value>
+                <value>
+                    <fullName>N</fullName>
+                    <default>false</default>
+                    <label>N</label>
+                </value>
+                <value>
+                    <fullName>NA</fullName>
+                    <default>false</default>
+                    <label>NA</label>
+                </value>
+                <value>
+                    <fullName>GRP</fullName>
+                    <default>false</default>
+                    <label>GRP</label>
+                </value>
+                <value>
+                    <fullName>HCSC</fullName>
+                    <default>false</default>
+                    <label>HCSC</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Country_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Country Code</label>
+        <length>2</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Country Name</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>County_Code__c</fullName>
+        <description>5 digit FIPS Format. Numeric Value (value will be derived from County Name) - Needs more research</description>
+        <externalId>false</externalId>
+        <label>FIPS Code</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>County_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>County Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DENTAL_MULT_CORP_Tier_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <label>DENTAL MULT CORP Tier Indicator</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dental_Tier_Structure__c</fullName>
+        <description>Business need is to show the Tier Number along with the description. (Age Rated vs Composite Rated). Business need is to also view the values associated with age-rated (16) and composite rated (26)</description>
+        <externalId>false</externalId>
+        <label>Dental Tier Structure</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Domestic_Partner__c</fullName>
+        <externalId>false</externalId>
+        <label>Domestic Partner</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Y</fullName>
+                    <default>false</default>
+                    <label>Y</label>
+                </value>
+                <value>
+                    <fullName>N</fullName>
+                    <default>false</default>
+                    <label>N</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HEALTH_MULT_CORP_Tier_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <label>HEALTH MULT CORP Tier Indicator</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Health_Rating_Area_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Health Rating Area Number</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Health_Tier_Structure__c</fullName>
+        <description>Business need is to show the BlueSTAR Tier Number along with the description. (Age Rated vs Composite Rated) Business need is to also view the values associated with age-rated (16) and composite rated (26)</description>
+        <externalId>false</externalId>
+        <label>Health Tier Structure</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hold_Reasons__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(INCLUDES(SGR_Hold_Reason__c,&apos;Wage &amp; Tax Audit&apos;),&apos;Wage &amp; Tax Audit; &apos;,NULL)+&apos;&apos; +
+IF(INCLUDES(SGR_Hold_Reason__c,&apos;1st Year Renewal&apos;),&apos;1st Year Renewal; &apos;,NULL)+&apos;&apos;+
+IF(INCLUDES(SGR_Hold_Reason__c,&apos;Block Acquisition&apos;),&apos;Block Acquisition; &apos;,NULL)+&apos;&apos;+
+IF(INCLUDES(SGR_Hold_Reason__c,&apos;Special Adjustments&apos;),&apos;Special Adjustments; &apos;,NULL)+&apos;&apos; +
+IF(INCLUDES(SGR_Hold_Reason__c,&apos;Miscellaneous&apos;),&apos;Miscellaneous; &apos;,NULL)+&apos;&apos; +
+IF(INCLUDES(SGR_Hold_Reason__c,&apos;Market Segment Verification&apos;),&apos;Market Segment Verification; &apos;,NULL)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hold Reasons</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Medicare_Primary__c</fullName>
+        <description>IL Only</description>
+        <externalId>false</externalId>
+        <label>Medicare Primary</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Y</fullName>
+                    <default>false</default>
+                    <label>Y</label>
+                </value>
+                <value>
+                    <fullName>N</fullName>
+                    <default>false</default>
+                    <label>N</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Contact Email</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact_Extension__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Contact Extension</label>
+        <length>5</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Contact Name</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Contact Phone</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Contact Title</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Type__c</fullName>
+        <description>Business need is to show the products that were renewed for the account last year.</description>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HDV</fullName>
+                    <default>false</default>
+                    <label>HDV</label>
+                </value>
+                <value>
+                    <fullName>HD</fullName>
+                    <default>false</default>
+                    <label>HD</label>
+                </value>
+                <value>
+                    <fullName>H</fullName>
+                    <default>false</default>
+                    <label>H</label>
+                </value>
+                <value>
+                    <fullName>D</fullName>
+                    <default>false</default>
+                    <label>D</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Public_Entity__c</fullName>
+        <description>SW Divisions</description>
+        <externalId>false</externalId>
+        <label>Public Entity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Y</fullName>
+                    <default>false</default>
+                    <label>Y</label>
+                </value>
+                <value>
+                    <fullName>N</fullName>
+                    <default>false</default>
+                    <label>N</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rating_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Rating Type</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SGR_Hold_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Hold Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Wage &amp; Tax Audit</fullName>
+                    <default>false</default>
+                    <label>Wage &amp; Tax Audit</label>
+                </value>
+                <value>
+                    <fullName>1st Year Renewal</fullName>
+                    <default>false</default>
+                    <label>1st Year Renewal</label>
+                </value>
+                <value>
+                    <fullName>Block Acquisition</fullName>
+                    <default>false</default>
+                    <label>Block Acquisition</label>
+                </value>
+                <value>
+                    <fullName>Special Adjustments</fullName>
+                    <default>false</default>
+                    <label>Special Adjustments</label>
+                </value>
+                <value>
+                    <fullName>Market Segment Verification</fullName>
+                    <default>false</default>
+                    <label>Market Segment Verification</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SGR_Other_Hold_Reasons__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Hold Reasons</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ShippingCity__c</fullName>
+        <externalId>false</externalId>
+        <label>ShippingCity</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShippingPostalCode__c</fullName>
+        <externalId>false</externalId>
+        <label>ShippingPostalCode</label>
+        <length>9</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShippingState__c</fullName>
+        <externalId>false</externalId>
+        <label>ShippingState</label>
+        <length>2</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShippingStreet__c</fullName>
+        <externalId>false</externalId>
+        <label>ShippingStreet</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Special_Eligibility__c</fullName>
+        <externalId>false</externalId>
+        <label>Special Eligibility</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Health</fullName>
+                    <default>false</default>
+                    <label>Health</label>
+                </value>
+                <value>
+                    <fullName>Dental</fullName>
+                    <default>false</default>
+                    <label>Dental</label>
+                </value>
+                <value>
+                    <fullName>Both</fullName>
+                    <default>false</default>
+                    <label>Both</label>
+                </value>
+                <value>
+                    <fullName>NA</fullName>
+                    <default>false</default>
+                    <label>NA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TEFRA__c</fullName>
+        <description>SW Divisions</description>
+        <externalId>false</externalId>
+        <label>TEFRA</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Y</fullName>
+                    <default>false</default>
+                    <label>Y</label>
+                </value>
+                <value>
+                    <fullName>N</fullName>
+                    <default>false</default>
+                    <label>N</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ZZ_ACA_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>ZZ ACA Count</label>
+        <summaryFilterItems>
+            <field>Benefit_Agreement__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Benefit_Agreement__c.Group_Account__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ZZ_ACA_Metallic_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>ZZ ACA Metallic Count</label>
+        <summaryFilterItems>
+            <field>Benefit_Agreement__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Benefit_Agreement__c.ACA_Indicator__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Benefit_Agreement__c.Group_Account__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ZZ_Is_Metallic_Account__c</fullName>
+        <description>Is Metallic Account is checked to true when all active BAs associated to the account have metallic plans.</description>
+        <externalId>false</externalId>
+        <formula>AND(ZZ_ACA_Count__c&gt;0, IF(ZZ_ACA_Count__c =ZZ_ACA_Metallic_Count__c , True, False))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ZZ Is Metallic Account</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>hold_end_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Hold end date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>renewal_duration_is_infinite__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Indefinite Hold</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <listViews>
+        <fullName>AllAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>HCSC_Division__c</columns>
+        <columns>Market_Segment__c</columns>
+        <columns>Renewal_Date__c</columns>
+        <columns>ACCOUNT.ACCOUNT_NUMBER</columns>
+        <columns>External_ID__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Forecast_Segment__c</field>
+            <operation>equals</operation>
+            <value>Small Group</value>
+        </filters>
+        <filters>
+            <field>ZZ_ACA_Metallic_Count__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Renewal_Date__c</field>
+            <operation>equals</operation>
+            <value>7/1/2019</value>
+        </filters>
+        <filters>
+            <field>HCSC_Division__c</field>
+            <operation>equals</operation>
+            <value>IL,TX,NM,OK,MT</value>
+        </filters>
+        <label>All Small Group Accounts</label>
+        <sharedTo>
+            <role>Small_Group</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All_Hold_Configurations</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ACCOUNT_NUMBER</columns>
+        <columns>Hold_Reasons__c</columns>
+        <columns>hold_end_date__c</columns>
+        <columns>renewal_duration_is_infinite__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>hold_end_date__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>All Hold Configurations</label>
+        <sharedTo>
+            <role>UnderwriterUser</role>
+        </sharedTo>
+    </listViews>
+    <validationRules>
+        <fullName>SGR_Hold_account</fullName>
+        <active>false</active>
+        <description>Enter hold end date or check the checkbox if hold reason is provided.</description>
+        <errorConditionFormula>IF( AND(OR(
+  AND((ISBLANK(hold_end_date__c)),renewal_duration_is_infinite__c=False,NOT(ISBLANK(SGR_Hold_Reason__c))), 
+  AND(NOT(ISBLANK(hold_end_date__c)),renewal_duration_is_infinite__c=TRUE,ISBLANK(SGR_Hold_Reason__c)),
+  AND((hold_end_date__c &gt;= today()),renewal_duration_is_infinite__c=False,(ISBLANK(SGR_Hold_Reason__c))),
+  AND(NOT(ISBLANK(hold_end_date__c)),renewal_duration_is_infinite__c=TRUE,NOT(ISBLANK(SGR_Hold_Reason__c)))),(ISPICKVAL(Market_Segment__c, &apos;SG&apos;))) , TRUE, FALSE)</errorConditionFormula>
+        <errorMessage>Please enter either Hold end date or Check infinite hold checkbox.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SGR_Other_hold_reason</fullName>
+        <active>false</active>
+        <description>If miscellaneous is selected than other reason should be provided.</description>
+        <errorConditionFormula>IF(
+AND(INCLUDES(SGR_Hold_Reason__c,&apos;Miscellaneous&apos;),ISBLANK(SGR_Other_Hold_Reasons__c)), TRUE, False)</errorConditionFormula>
+        <errorMessage>Please provide other hold reasons</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SGR_holdreason</fullName>
+        <active>true</active>
+        <description>If end hold date is present hold reason cannot be empty.</description>
+        <errorConditionFormula>IF(AND
+(OR(
+    AND((hold_end_date__c &gt; today()),ISBLANK(SGR_Hold_Reason__c)),
+    AND(ISBLANK(hold_end_date__c),renewal_duration_is_infinite__c=TRUE,ISBLANK(SGR_Hold_Reason__c)),
+    AND (ISPICKVAL(Status__c,&apos;Underwriter hold&apos;),ISBLANK(SGR_Hold_Reason__c))),(ISPICKVAL(Market_Segment__c, &apos;SG&apos;))) , TRUE, FALSE)</errorConditionFormula>
+        <errorMessage>Hold Reason Cannot be empty if Hold End Date Greater or Equal to Current Date. Please enter Hold Reason.</errorMessage>
+    </validationRules>
+</CustomObject>
